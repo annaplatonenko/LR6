@@ -107,6 +107,11 @@ public:
 		cout << "введите пляж: ";
 		cin >> *beach;
 	}
+
+	void laba()
+	{
+		cout << "Пожалуйста," << endl;
+	}
 };
 
 class Rugby_Football : public virtual Football
@@ -172,6 +177,11 @@ public:
 		cout << "введите название команды: ";
 		cin >> *team_name;
 	}
+
+	void laba()
+	{
+		cout << "Поставьте зачет :)" << endl;
+	}
 };
 
 class My_Football : public Beach_Football, public Rugby_Football
@@ -227,7 +237,9 @@ int main()
 	my->vvod();
 	cout << endl;
 	my->printall();
-
+	cout << endl;
+	my->Beach_Football::laba();
+	my->Rugby_Football::laba();
 	delete my;
 }
 
