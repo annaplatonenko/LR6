@@ -222,31 +222,12 @@ int main()
 {
 	setlocale(LC_ALL, "Russian");
 
-	int size = 3;
-
-	Football** massiv = new Football * [size];
 	My_Football* my = new My_Football();
-	Beach_Football* beach = new Beach_Football();
-	Rugby_Football* rugby = new Rugby_Football();
-
-	massiv[0] = my;
-	massiv[1] = beach;
-	massiv[2] = rugby;
-
-	for (int i = 0; i < 1; i++)
-	{
-		massiv[i]->vvod();
-	}
+	
+	my->vvod();
 	cout << endl;
-
-	for (int i = 0; i < 1; i++)
-	{
-		massiv[i]->printall();
-	}
-	cout << endl;
+	my->printall();
 
 	delete my;
-	delete beach;
-	delete rugby;
 }
 
