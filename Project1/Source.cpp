@@ -174,7 +174,7 @@ public:
 	}
 };
 
-class My_Football : public virtual Beach_Football, public virtual Rugby_Football, public virtual Football
+class My_Football : public Beach_Football, public Rugby_Football
 {
 public:
 	string* color;
